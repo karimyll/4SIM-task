@@ -5,3 +5,15 @@ video.addEventListener('ended', function() {
     this.play();
 }
 , false);
+
+var burger = document.querySelector('.burger');
+var close = document.querySelector('.close');
+var menu = document.querySelector('.menu');
+
+burger.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});
+
+close.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});
